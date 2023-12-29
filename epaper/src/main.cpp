@@ -13,14 +13,14 @@ std::unique_ptr<EPAPER::EPD_Driver>epaper {std::make_unique<EPAPER::EPD_Driver>(
                 // EPD_Driver epdtest(eScreen_EPD_271, boardRaspberryPiPico_RP2040_EXT3);
 
             // Initialize CoG
-//epaper.COG_initial();
+epaper->COG_initial();
             // Global Update Call
             // void EPD_Driver::globalUpdate(const uint8_t * data1s, const uint8_t * data2s)
-//epaper.globalUpdate( BW_monoBuffer, BW_0x00Buffer);
+epaper->globalUpdate( BW_monoBuffer, BW_0x00Buffer);
 TYME::delay(100);
-//epaper.globalUpdate(BWR_blackBuffer,BWR_redBuffer);
+epaper->globalUpdate(BWR_blackBuffer,BWR_redBuffer);
           // Turn off CoG
-//epaper.COG_powerOff();
+epaper->COG_powerOff();
 
     return 0;
 }
