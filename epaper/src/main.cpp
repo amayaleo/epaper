@@ -8,7 +8,7 @@
 
 
 int main(){
-std::unique_ptr<EPAPER::EPD_Driver>epaper {std::make_unique<EPAPER::EPD_Driver>((eScreen_EPD_213, EPAPER::boardRaspberryPi_EXT)};
+std::unique_ptr<EPAPER::EPD_Driver>epaper {std::make_unique<EPAPER::EPD_Driver>(eScreen_EPD_213, EPAPER::boardRaspberryPi_EXT)};
     //EPAPER::EPD_Driver epaper(eScreen_EPD_213, EPAPER::boardRaspberryPi_EXT);
                 // EPD_Driver epdtest(eScreen_EPD_271, boardRaspberryPiPico_RP2040_EXT3);
 
